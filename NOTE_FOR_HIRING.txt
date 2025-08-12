@@ -5,3 +5,5 @@ I am not using the Page Object Model (POM) pattern because I believe it would ad
 I am not using TypeScript for the same reason. I also don’t consider it particularly valuable in test automation projects, since test execution is already controlled by QA, and it is not expected to encounter unhandled errors.
 
 I would consider creating tests following the Behavior-Driven Development (BDD) approach. However, at this stage, and due to the short scope of the project, I decided not to introduce that additional complexity.
+
+I follow the Playwright recommendation about locating elements by text whenever I can , to simulate user interactions instead of using IDs
