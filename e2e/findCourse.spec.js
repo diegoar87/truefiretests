@@ -40,7 +40,7 @@ test.describe('Search Bar' , () => {
     await search(SEARCH_NOT_FOUND,page)
     const resultsList = page.locator('.aa-List').first();
     // I expect to not see the list
-    await expect(resultsList).not.toBeVisible();
+    await expect(resultsList.locator('li')).toHaveCount(0);
   });
 
   test('should find recommended courses on search section' , async ({page}) => {
